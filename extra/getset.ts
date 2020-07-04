@@ -1,20 +1,20 @@
-class Pessoa {
-  private _idade: number = 0;
+class PersonAge {
+  private _age: number = 0;
 
-  get idade(): number {
-    return this._idade;
+  get age(): number {
+    return this._age;
   }
 
-  set idade(valor: number) {
+  set age(valor: number) {
     if (valor >= 0 && valor <= 120) {
-      this._idade = valor;
+      this._age = valor;
     }
   }
 }
 
-const pessoa1 = new Pessoa();
-pessoa1.idade = 20;
-console.log(pessoa1.idade);
+const person = new PersonAge();
+person.age = 20; //set
+console.log(person.age);
 
-pessoa1.idade = -5; // idade negativa, manteve idade anterior(20)
-console.log(pessoa1.idade);
+person.age = -5; // idade negativa, manteve idade anterior(20)
+console.log(person.age);
