@@ -4,6 +4,7 @@ function addToZ(x: number, y: number) {
   return x + y + z;
 }
 
+//typed function
 let myAdd: (x: number, y: number) => number = function (
   x: number,
   y: number
