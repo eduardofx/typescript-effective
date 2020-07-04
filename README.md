@@ -1,2 +1,3 @@
-# posgraduacao-alfa
-Arquivos da matéria de Typescript
+RUN
+
+npx ts-node-dev file.ts

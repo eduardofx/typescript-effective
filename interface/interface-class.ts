@@ -9,5 +9,5 @@ class Clock implements ClockInterface {
     console.log(h, m);
   }
 }
-const clasas = new Clock(3, 2);
-console.log(clasas);
+const time = new Clock(3, 2);
+console.log(time);
