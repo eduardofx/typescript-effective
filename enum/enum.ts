@@ -1,4 +1,4 @@
-const enum Payment {
+enum Payment {
   Card = "Card",
   Billet = "Billet",
   Money = "Money",
