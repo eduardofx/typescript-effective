@@ -1,3 +1,5 @@
+//tuplas
+
 let address: [string, number, string] = ["Rua", 100, "complemento"];
 
 console.log(address);
