@@ -1,12 +1,20 @@
 ### Typescript
 
+
+
+> \$ npm i -g typescript@latest
+
+> \$ tsc file.ts
+
+> \$ node file.js
+
 RUN
 
-> npx ts-node-dev file.ts
+> \$ npx ts-node-dev file.ts
 
 #### namespace
 
-> tsc --outFile index.js index.ts
+> \$ tsc --outFile index.js index.ts
 > \$ node index.js
 
 return:
@@ -21,7 +29,9 @@ return:
 "101" - Não combinou Apenas Letras
 ```
 
-Decorator
-// tsconfig.json
+#### Decorator
+tsconfig.json
+
 // "experimentalDecorators": true,
+
 // "emitDecoratorMetadata": true
