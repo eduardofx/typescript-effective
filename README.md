@@ -21,8 +21,8 @@ return:
 "101" - Não combinou Apenas Letras
 ```
 
-Decorator
-// tsconfig.json
+#### Decorator
+tsconfig.json
 
 // "experimentalDecorators": true,
 
