@@ -3,7 +3,7 @@ interface CarConfig {
   width?: number;
 }
 
-const carColor = <CarConfig>{
+const carColo: CarConfig = {
   color: "black",
 };
 
