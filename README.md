@@ -10,6 +10,8 @@
 
 RUN
 
+> \$ npm i -g ts-node-dev
+
 > \$ npx ts-node-dev file.ts
 
 #### namespace
