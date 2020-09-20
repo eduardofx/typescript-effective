@@ -17,7 +17,7 @@ class Sum extends Calculate {
 }
 const c: Calculate = new Sum();
 c.executeCalc(1, 2);
-// espera que o getResultado esteja em Calculo, não funciona dentro do sum
+// espera que o getResultado esteja em Calculate, não funciona dentro do sum
 console.log(c.getResultado());
 
 const cd = new Sum();
