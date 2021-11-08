@@ -33,6 +33,8 @@ return:
 ```
 
 #### Decorator
+uncomment the lines below
+
 tsconfig.json
 
 // "experimentalDecorators": true,
