@@ -17,6 +17,7 @@ RUN
 #### namespace
 
 > \$ tsc --outFile index.js index.ts
+
 > \$ node index.js
 
 return:
