@@ -4,7 +4,7 @@ interface User {
     lastname?: string;
     age: number;
     telephone?: number;
-    twitter?: string;
+    twitter?: string; 
   }
 
 type UserFullname = Pick<User, 'firstname' | 'lastname'>;
