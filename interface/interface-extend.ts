@@ -4,7 +4,7 @@ interface Color {
 }
 
 interface wheelSize {
-  wheelSize: number;
+  wheelSize: number; 
 }
 
 interface Car extends Color, wheelSize {
