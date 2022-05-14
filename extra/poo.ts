@@ -1,38 +1,23 @@
-class Car {
-  private currentSpeed: number = 0;
-
-  constructor(
-    public brand: string,
-    public model: string,
-    private MaximumSpeed: number = 200
-  ) {}
-
+class Wallet {
+  constructor(private currentBalance: number) {}
   // protected - acessível apenas dentro da classe Carros
-  protected changeSpeed(delta: number): number {
-    //desafio
-    const newSpeed = this.currentSpeed + delta;
-
-    if (newSpeed >= 0 && newSpeed <= this.MaximumSpeed) {
-      this.currentSpeed = newSpeed;
-    } else {
-      this.currentSpeed = delta > 0 ? this.MaximumSpeed : 0;
+  protected executeTransaction(delta: number): number {
+    const calc = this.currentBalance + delta;
+    if (calc < 0) {
+      return this.currentBalance;
     }
-
-    return this.currentSpeed;
+    this.currentBalance = calc;
+    return this.currentBalance;
   }
-
-  public accelerate(): number {
-    return this.changeSpeed(5);
+  public deposit(val: number): number {
+    return this.executeTransaction(val);
   }
-
-  public brake(): number {
-    return this.changeSpeed(-5);
+  public withdraw(val: number): number {
+    const format = val < 0 ? val : val * -1;
+    return this.executeTransaction(format);
   }
 }
-
-const myObjCar = new Car("Hyundai", "HB20", 100);
-myObjCar.accelerate();
-myObjCar.accelerate();
-myObjCar.accelerate();
-myObjCar.brake();
-console.log(myObjCar);
+const transaction = new Wallet(40);
+transaction.deposit(20);
+transaction.withdraw(50);
+console.log(transaction);
