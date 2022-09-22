@@ -15,3 +15,11 @@ interface FirstType {
   const excludeType: ExcludeType =  'firstName' 
   // Output; "firstName" | "lastName"
   // Exclui oque estiver na segunda interface
+  
+  
+type myUnionType = "🍇" | "🍎" | "🫐" | "🍋"
+
+// This works!
+let lemon:myUnionType = "🍋"
+ 
+let noLemonsPlease:Exclude<myUnionType, "🍋"> = "🍇"
