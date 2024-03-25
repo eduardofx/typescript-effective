@@ -1,20 +1,23 @@
-class PersonProtected {
-  name: string;
-  age: number;
-  protected isAlive: boolean;
-
-  constructor(name: string, age: number, isAlive: boolean) {
+class Person {
+  protected name: string;
+  constructor(name: string) {
     this.name = name;
-    this.age = age;
-    this.isAlive = isAlive;
   }
 }
-
-class PersonPJ extends PersonProtected {
-  cnpj: number;
-
-  constructor(name: string, age: number, isAlive: boolean, cnpj: number) {
-    super(name, age, isAlive); //ao utilizar protected, podemos acessar por classes
-    this.cnpj = cnpj; //filhas e pela própria classe;
+ 
+class Employee extends Person {
+  private department: string;
+ 
+  constructor(name: string, department: string) {
+    super(name);
+    this.department = department;
+  }
+ 
+  public getElevatorPitch() {
+    return `Hello, my name is ${this.name} and I work in ${this.department}.`;
   }
 }
+ 
+let howard = new Employee("Howard", "Sales");
+console.log(howard.getElevatorPitch());
+//console.log(howard.name);
