@@ -1,2 +1,3 @@
-const a: string = "ssss";
+const a: string = "Typescript Moderno";
 console.log(a);
+
